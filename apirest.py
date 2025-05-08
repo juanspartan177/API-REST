@@ -89,4 +89,5 @@ def actualizar_reglas(req: ReglasRequest, rol: str = Depends(get_rol)):
     if rol != "Orquestador":
         raise HTTPException(status_code=403, detail="No autorizado para actualizar reglas")
     return {"mensaje": "Reglas de orquestación actualizadas", "reglas": req.reglas}
-git log
+
+
