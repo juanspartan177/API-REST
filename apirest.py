@@ -91,4 +91,3 @@ def actualizar_reglas(req: ReglasRequest, rol: str = Depends(get_rol)):
     return {"mensaje": "Reglas de orquestación actualizadas", "reglas": req.reglas}
 
 
-
